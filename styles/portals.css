@@ -1,0 +1,100 @@
+.portal {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 8;
+	top: 0;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+ .portal #head {
+	background-color: #250030;
+	color: white;
+	height: 3cm;
+//	height: 0.2cm;
+	width: 100%;
+	border: none;
+	box-shadow: 0 0 20px 0 black;
+	line-height: 3cm;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+.portal #head #heading {
+	font-weight: 300;
+	font-size: 45px;
+	float: left;
+	margin-left: 1cm;
+}
+
+.portal #head .topIcon {
+	float: right;
+	border-radius: 50%;
+	margin: 5mm 0;
+	transition: background-color 0.2s;
+}
+
+.portal #head .topIcon:active {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.portal #head .topIcon svg {
+	height: 8mm;
+	width: 8mm;
+	fill: white;
+	padding: 6mm 6mm;
+}
+
+.portal #container {
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	min-height: 5cm;
+	max-height: 12cm;
+	overflow-y: auto;
+	width: 18cm;
+	background-color: black;
+	border-radius: 15px;
+	text-align: center;
+	border: 1px solid black;
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+}
+
+.portal .input {
+	height: 1.3cm;
+	width: 80%;
+	margin: 3mm 0;
+	color: white;
+	font-size: 35px;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	border-bottom: 1px solid white;
+}
+
+.portal .label {
+	font-weight: 300;
+	font-size: 30px;
+	color: white;
+	display: block;
+	text-align: left;
+	text-indent: 1cm;
+	margin: 0 1cm;
+}
+
+.portal .submitButton {
+	font-size: 25px;
+	border-radius: 15px;
+	padding: 5mm 1cm;
+	color: white;
+	background-color: #250030;
+	border: 1px solid white;
+}
+
+.portal .submitButton:active {
+	background-color: indigo;
+}

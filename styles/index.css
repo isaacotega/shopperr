@@ -1,0 +1,470 @@
+body {
+	 background: black;
+//	 background: orange;
+	 margin: 0;
+ }
+
+button {
+	outline: none;
+}
+ 
+ input {
+	outline: none;
+}
+
+ textarea {
+	outline: none;
+}
+
+ select {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.statement {
+	font-size: 25px;
+	color: white;
+	padding: 0 1cm;
+	text-indent: 1cm;
+}
+
+.centerPlaced {
+	text-align: center;
+}
+
+ /* Top Nav */
+ 
+ #topNav {
+	background-color: #250030;
+	color: white;
+	height: 3cm;
+	width: 100%;
+	border: none;
+	line-height: 3cm;
+	text-align: left;
+	position: fixed;
+	top: 3cm;
+	z-index: 3;
+}
+
+#topNav #container {
+	
+}
+
+#topNav #container .item {
+	display: inline-block;
+	font-size: 30px;
+	color: white;
+	padding: 0 5mm
+}
+
+#topNav #container .item:active {
+	background-color: rgba(255, 255, 255, 0.2)
+}
+
+#topNav #container #selected {
+	font-weight: 700;
+	border-bottom: 2mm solid white;
+	height: 2.82cm;
+}
+
+ /* Top Bar */
+ 
+ #topBar {
+	background-color: #250030;
+	color: white;
+	height: 3cm;
+//	height: 0cm;
+	width: 100%;
+	border: none;
+	box-shadow: 0 0 20px 0 black;
+	line-height: 3cm;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+#topBar #heading {
+	font-weight: 300;
+	font-size: 40px;
+	float: left;
+	margin-left: 1cm;
+}
+
+#topBar #navIcon {
+	font-weight: 700;
+	font-size: 40px;
+	float: left;
+	margin-left: 10px;
+	transition: color 0.2s;
+}
+
+#topBar .iconNumber {
+	border-radius: 50%;
+	border: none;
+	background-color: purple;
+	color: white;
+	font-size: 25px;
+	font-weight: 700;
+	height: 1cm;
+	width: 1cm;
+}
+
+#topBar .topIcon {
+	float: right;
+	border-radius: 50%;
+	margin: 5mm 0;
+	transition: background-color 0.2s;
+}
+
+#topBar .topIcon:active {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+#topBar .topIcon svg {
+	height: 8mm;
+	width: 8mm;
+	fill: white;
+	padding: 6mm 6mm;
+}
+
+#topBar #topProfilePic {
+	float: right;
+	border-radius: 50%;
+	margin: 5mm;
+	height: 2cm;
+	width: 2cm;
+	box-shadow: 0 0 5px 0 blue;
+}
+
+/* SideNav */
+
+#sideNav {
+	width: 0%;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 4;
+	transition: width 0.1s;
+	margin: none;
+	overflow: hidden;
+}
+
+#sideNav #container {
+	background-color: indigo;
+	height: 100%;
+	max-width: 15cm;
+	border: none;
+	outline: none;
+	text-align: center;
+	overflow: scroll;
+}
+
+#sideNav #head {
+	background-color: #250030;
+	height: 3.2cm;
+	width: 100%;
+	overflow: hidden;
+}
+
+#sideNav #head #name {
+	font-weight: 700;
+	font-size: 40px;
+	color: white;
+	float: left;
+	margin-left: 1cm;
+}
+
+#sideNav #container #body {
+	text-align: left;
+	overflow: scroll;
+	padding-top: 5mm;
+}
+
+.sideLinks {
+	font-weight: 300;
+	font-size: 30px;
+	display: block;
+	height: 3cm;
+	line-height: 3cm;
+	color: white;
+	overflow: scroll;
+}
+
+#sideNav #body svg {
+	padding: 0 5mm;
+	width: 1cm;
+	height: 1cm;
+	fill: white;
+	display: inline-block;
+}
+
+.sideLinks:active {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sideLinks a {
+	color: black;
+}
+
+/* Main */
+
+#main {
+	margin-top: 3.2cm;
+	margin-right: 0;
+	width: 100%;
+}
+
+/* Search */
+
+.searchHolder {
+	width: 100%;
+	text-align: center;
+	padding: 1cm 0;
+}
+
+.searchHolder input {
+	width: 96%;
+	height: 2cm;
+	color: white;
+	font-size: 30px;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	border-bottom: 1px solid white;
+}
+
+/* Full Loader */
+
+#fullLoader {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 9;
+	top: 3cm;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+#fullLoader #loaderHolder {
+	position: absolute;
+	top: 45%;
+	transform: translateX(-50%) translateY(-120%);
+	display: inline-block;
+}
+
+#fullLoader #loader {
+	width: 2cm;
+	height: 2cm;
+	border: 10px solid rgba(255, 255, 255, 0.2);
+	border-top: 10px solid white;
+	border-radius: 50%;
+	display: inline-block;
+	-webkit-animation: spin 0.7s linear infinite;
+}
+
+#fullLoader #statement {
+	position: absolute;
+	top: 45%;
+	transform: translateX(-50%) translateY(0%);
+	display: inline-block;
+	color: white;
+	font-size: 35px;
+}
+
+/* Options */
+
+.optionHolder .option {
+	width: 100%;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	transition: background-color 0.2s;
+ }
+ 
+.optionHolder .option:active {
+	background-color: rgba(255, 255, 255, 0.2);
+ }
+ 
+ .optionHolder .option #text {
+	color: white;
+	line-height: 3cm;
+	font-size: 30px;
+	padding: 0 5mm;
+	overflow-x: scroll;
+}
+
+.optionHolder .unclickableOption {
+	width: 100%;
+ }
+ 
+ .optionHolder .unclickableOption #text {
+	color: white;
+	line-height: 3cm;
+	font-size: 30px;
+	font-weight: 700;
+	padding: 0 5mm;
+	overflow-x: scroll;
+}
+
+ .optionHolder .option #littleText-unhidden {
+	color: white;
+	font-size: 25px;
+	display: block;
+	padding: 0 5mm 5mm 3mm;
+	overflow-x: scroll;
+}
+
+ .optionHolder .option #littleText-hidden {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 25px;
+	display: none;
+	padding: 0 5mm 5mm 3mm;
+	overflow-x: scroll;
+}
+
+/* Placeholders */
+
+#placeholder {
+	width: 94%;
+	text-align: center;
+	color: white;
+	padding: 3cm 3%;
+	font-size: 30px;
+}
+
+/* Tables */
+
+.table {
+	border: 2px solid black;
+	width: 98%;
+	font-size: 25px;
+	background-color: black;
+	color: white;
+	margin: 2cm 1%;
+}
+
+.table thead {
+	background-color: indigo;
+}
+
+.table tbody {
+	background-color: blue;
+}
+
+.table tfoot {
+	background-color: indigo;
+}
+
+.table tr {
+	line-height: 1cm;
+	height: 2.5cm;
+}
+
+.table th {
+	text-align: center;
+	height: 1cm;
+}
+
+.table td {
+	text-align: center;
+	height: 1cm;
+}
+
+/* Input Suggestions */
+
+#inputSuggestions {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 3mm 0;
+	z-index: 9;
+	display: none;
+}
+
+#inputSuggestions #container {
+	overflow-x: scroll;
+}
+
+#inputSuggestions #container .suggestion {
+	display: inline-block;
+	padding: 7mm 5mm;
+	border-radius: 50px;
+	background-color: blue;
+	margin: 0 3mm;
+}
+
+#inputSuggestions #container .suggestion:active {
+	background-color: darkblue;
+}
+
+#inputSuggestions #container .suggestion #text {
+	color: white;
+	font-size: 30px
+}
+
+/* corner drop down */
+
+#cornerDropDown {
+	position: fixed;
+	z-index: 4;
+	left: 0;
+	top: 0;
+}
+
+#cornerDropDown #background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#cornerDropDown #container {
+	position: absolute;
+	right: 3mm;
+	top: 3mm;
+	background-color: black;
+	border-radius: 15px;
+	box-shadow: 0 0 15px 0 black;
+	width: 0;
+	overflow: hidden;
+	transition: 0.2s;
+}
+
+#cornerDropDown #container .option {
+	display: block;
+	line-height: 2cm;
+	height: 2cm;
+	font-size: 30px;
+	padding: 0 3mm;
+	color: white;
+	overflow-x: scroll;
+}
+
+#cornerDropDown #container .option:active {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Animation */
+
+@-webkit-keyframes spin {
+	
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+	
+}

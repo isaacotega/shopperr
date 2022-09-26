@@ -1,0 +1,47 @@
+#container {
+	overflow-y: scroll;
+}
+
+.searchHolder {
+	display: none;
+}
+
+.goodNameHolder {
+	width: 100%;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	transition: background-color 0.2s;
+ }
+ 
+.goodNameHolder:active {
+	background-color: rgba(255, 255, 255, 0.2);
+ }
+ 
+ .goodNameHolder #goodName {
+	color: white;
+	line-height: 3cm;
+	font-size: 30px;
+	padding: 0 5mm;
+	overflow-x: scroll;
+}
+
+ .goodNameHolder #goodTags {
+	display: none;
+}
+
+.goodNameHolder #tblDetails {
+	color: white;
+	overflow-x: scroll;
+	max-width: 100%;
+	text-align: center;
+	display: none;
+}
+
+.goodNameHolder #tblDetails th {
+	font-size: 25px;
+}
+
+.goodNameHolder #tblDetails td {
+	padding: 5mm;
+	font-size: 20px;
+}

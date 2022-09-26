@@ -1,0 +1,12 @@
+#businessProfilePictureUploaderPortal #inpUploadPicture + label {
+	display: inline-block;
+	font-size: 25px;
+	border-radius: 15px;
+	padding: 5mm 1cm;
+	color: white;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+#businessProfilePictureUploaderPortal #inpUploadPicture + label:active {
+	background-color: rgba(255, 255, 255, 0.5);
+}

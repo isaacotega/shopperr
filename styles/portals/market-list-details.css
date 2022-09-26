@@ -1,0 +1,19 @@
+.portal #tblDetails {
+	display: inline-block;
+}
+
+.portal #tblDetails tbody {
+	text-align: center;
+	text-align: left;
+}
+
+.portal #tblDetails tr {
+	height: 1.5cm;
+}
+
+.portal #tblDetails td {
+	background-color: black;
+	color: white;
+	font-size: 28px;
+	padding: 0 3mm;
+}

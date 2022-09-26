@@ -1,0 +1,83 @@
+.portal #tblPricesList {
+	color: white;
+	display: inline-block;
+	font-size: 25px;
+	background-color: white;
+	width: 80%;
+}
+
+.portal #tblPricesList tbody {
+	text-align: center;
+}
+
+.portal #tblPricesList tr {
+	height: 1.5cm;
+}
+
+.portal #tblPricesList td {
+	background-color: black;
+}
+
+.portal #tblPricesList th {
+	background-color: black;
+}
+
+.portal #tblPricesList input {
+	height: 1.3cm;
+	width: 80%;
+	margin: 3mm 0;
+	color: white;
+	font-size: 28px;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	border-bottom: 1px solid white;
+}
+
+.portal #tblPricesList svg {
+	fill: white;
+	padding: 0 5mm;
+}
+
+.portal #btnAddPrice {
+	width: 80%;
+	height: 1.5cm;
+	background-color: black;
+	color: white;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.portal #tagsHolder {
+	overflow-x: scroll;
+	width: 90%;
+	display: inline-block;
+	text-align: left;
+}
+	
+.portal #tagsHolder .tag {
+	height: 1.5cm;
+	line-height: 1.5cm;
+	min-width: 3cm;
+	text-align: center;
+	margin: 3mm 2mm;
+	padding: 0 3mm;
+	display: inline-block;
+	background-color: #250030;
+	border-radius: 10px;
+	box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.4);
+}
+	
+.portal .tag #tagName {
+	font-size: 25px;
+	font-weight: 700;
+	color: white;
+}
+	
+.portal .tag #lblDeleteTag {
+	font-size: 30px;
+	font-weight: 300;
+	color: red;
+	float: right;
+	margin: 0 4mm;
+}
+	

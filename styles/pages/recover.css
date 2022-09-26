@@ -1,0 +1,9 @@
+#btnSendLink {
+	height: 2cm;
+	width: 7cm;
+	border-radius: 10px;
+	font-size: 30px;
+	background-color: #250030;
+	color: white;
+	border: none;
+}
